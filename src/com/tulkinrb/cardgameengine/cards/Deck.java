@@ -13,14 +13,14 @@ import java.util.Map;
 public class Deck {
 	
 	/**
-	 * a single card that belongs to a deck. a card object represents the card type (for example ace of spades), and multiple piles may contain it.
-	 * a card object is only created with a deck and belongs to that deck.
-	 * a card's attributes are set at the card's creation and cannot change.
+	 * a single card that belongs to a deck. represents the card type (for example ace of spades), and multiple cards may have this type.
+	 * a card type object is only created with a deck and belongs to that deck.
+	 * a card type's attributes are set at the card type's creation and cannot change.
 	 * 
 	 * @author TulkinRB
 	 *
 	 */
-	public class Card {
+	public class CardType {
 		
 		// todo: use a generic object of the implemented language when it is created
 		/**
@@ -32,7 +32,7 @@ public class Deck {
 		 * constructs a card object with attributes as given by the specified map
 		 * @param attributes a mapping from an attribute name, to the value which will be assigned to it
 		 */
-		private Card(Map<String, Object> attributes){
+		private CardType(Map<String, Object> attributes){
 			// todo: find a way to deep clone the map so it can't be changed from outside
 			this.attributes = attributes;
 		}
@@ -51,7 +51,7 @@ public class Deck {
 	/**
 	 * an ordered list that contains all of the deck's card in their specific order
 	 */
-	private List<Card> cards;
+	private List<CardType> cards;
 	
 	
 	/**
@@ -60,7 +60,7 @@ public class Deck {
 	 * @return the card in this deck with the given index
 	 * @pre index >= 0 && index < this.size()
 	 */
-	public Card getCardByIndex(int index){
+	public CardType getCardByIndex(int index){
 		return this.cards.get(index);
 	}
 	
