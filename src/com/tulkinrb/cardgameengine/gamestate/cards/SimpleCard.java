@@ -1,4 +1,4 @@
-package com.tulkinrb.cardgameengine.cards;
+package com.tulkinrb.cardgameengine.gamestate.cards;
 
 /**
  * a basic implementation of the Card interface

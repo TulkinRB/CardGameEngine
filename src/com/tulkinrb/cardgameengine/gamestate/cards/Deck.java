@@ -1,4 +1,4 @@
-package com.tulkinrb.cardgameengine.cards;
+package com.tulkinrb.cardgameengine.gamestate.cards;
 
 import java.util.List;
 import java.util.Map;

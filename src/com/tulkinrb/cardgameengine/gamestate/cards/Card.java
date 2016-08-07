@@ -1,4 +1,4 @@
-package com.tulkinrb.cardgameengine.cards;
+package com.tulkinrb.cardgameengine.gamestate.cards;
 
 /**
  * a single 'physical' card, with orientation, that can be moved from pile to pile.
